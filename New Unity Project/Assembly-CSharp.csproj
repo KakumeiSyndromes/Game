@@ -65,6 +65,7 @@
     <Compile Include="Assets\SingletonMonoBehaviour.cs" />
     <Compile Include="Assets\tama.cs" />
     <Compile Include="Assets\test.cs" />
+    <None Include="Assets\Resources\gameDB.txt" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>C:/Users/菊田　大樹/Documents/Game/New Unity Project/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

@@ -63,6 +63,7 @@ public class main : SingletonMonoBehaviour<main>
         {
             priority ++;
             enemy.sprite = Resources.Load<Sprite>(textWords[priority,1]);
+            hp = int.Parse(textWords[priority, 2]);
             Debug.Log("通った");
         }
 

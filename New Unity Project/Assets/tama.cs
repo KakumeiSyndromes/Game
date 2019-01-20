@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class tama : MonoBehaviour
 {
+
+    private bool attackFlag;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        attackFlag = false;
     }
 
     // Update is called once per frame
@@ -16,9 +19,16 @@ public class tama : MonoBehaviour
 
         if (Input.GetMouseButton(0))
         {
-            //  hp = hp - 1;
-            main.Instance.attack();
-            // Debug.Log("touch");
+            if (!attackFlag)
+            {
+                attackFlag = true;
+                //  hp = hp - 1;
+                main.Instance.attack();
+                // Debug.Log("touch");
+            }
+        } else
+        {
+            attackFlag = false;
         }
     }
 }

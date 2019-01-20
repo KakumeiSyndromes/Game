@@ -27,5 +27,11 @@ public class main : SingletonMonoBehaviour<main>
         hp--;
         Debug.Log("attack");
 
+        if(hp == 0)
+        {
+            enemy.sprite = Resources.Load<Sprite>("enemyBrainSprite");
+            Debug.Log("通った");
+        }
+
     }
 }
